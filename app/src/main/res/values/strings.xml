@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FishEyeCamera</string>
+    <string name="title_activity_gallery">Gallery</string>
+    <string name="capture">Capture</string>
+    <string name="still_image_captured">still image captured.</string>
+    <string name="usb_device_attached">usb device attached.</string>
+    <string name="usb_device_detached">usb device detached.</string>
+    <string name="recording_started">recording started.</string>
+    <string name="recording_stopped">recording stopped.</string>
+    <string name="double_click_exit_tips">Please click BACK again to exit.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="more">More</string>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_camera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="#000000"
+    tools:context="com.zhilun.camera.fisheyecamera.CameraActivity">
+
+    <com.zhilun.camera.widget.UVCCameraTextureView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageViewCameraBackground"
+        android:background="#ff585888"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/status"
+        android:padding="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/linearLayoutRight">
+
+        <Chronometer
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometerRecordingTime"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:format="00:00:00"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayoutRight"
+        android:weightSum="120.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="20.0">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/btn_action_menu"
+                android:background="#00000000"
+                android:id="@+id/imageButtonActionMenu"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="20dp"
+                tools:ignore="ContentDescription"
+                android:padding="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="25.0">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/btn_mode_camera"
+                android:background="#00000000"
+                android:id="@+id/imageButtonShutterMode"
+                android:scaleType="fitCenter"
+                tools:ignore="ContentDescription"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="30.0">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/btn_shutter"
+                android:background="#00000000"
+                android:id="@+id/imageButtonActionShutter"
+                android:scaleType="fitCenter"
+                tools:ignore="ContentDescription"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="25.0">
+
+            <RelativeLayout
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:id="@+id/relativeLayoutGallery"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                tools:ignore="UselessParent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_gallery"
+                    android:background="#00000000"
+                    android:id="@+id/imageButtonGallery"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="20.0">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/btn_calibration"
+                android:background="#00000000"
+                android:id="@+id/imageButtonCalibration"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                tools:ignore="ContentDescription"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
